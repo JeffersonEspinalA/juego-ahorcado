@@ -19,11 +19,6 @@ def mostrar_mensaje(mensaje, pantalla, tam_fuente, x, y):
     texto = fuente.render(mensaje, True, NEGRO)
     pantalla.blit(texto, (x, y))
 
-def mostrar_mensaje_game_over(mensaje, pantalla, tam_fuente, x, y):
-    fuente = pygame.font.Font("font/Pangolin-Regular.ttf", tam_fuente)
-    texto = fuente.render(mensaje, True, NEGRO)
-    pantalla.blit(texto, (x, y))
-
 # Función del juego
 def juego_ahorcado():
     pygame.init()
